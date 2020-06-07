@@ -84,8 +84,8 @@ end
 
 
 keymap.add {
-  ["ctrl+shift+p"] = "core:command-finder",
-  ["ctrl+p"] = "core:file-finder",
+  ["ctrl+shift+p"] = "core:find-command",
+  ["ctrl+p"] = "core:find-file",
   ["ctrl+o"] = "core:open-file",
   ["ctrl+n"] = "core:new-doc",
   ["alt+return"] = "core:toggle-fullscreen",
@@ -139,6 +139,7 @@ keymap.add {
   ["ctrl+delete"] = "doc:delete-to-next-word-end",
   ["ctrl+shift+delete"] = "doc:delete-to-next-word-end",
   ["return"] = { "command:submit", "doc:newline" },
+  ["keypad enter"] = { "command:submit", "doc:newline" },
   ["ctrl+return"] = "doc:newline-below",
   ["ctrl+shift+return"] = "doc:newline-above",
   ["ctrl+j"] = "doc:join-lines",
